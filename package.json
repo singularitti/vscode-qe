@@ -1,0 +1,25 @@
+{
+  "name": "vscode-qe",
+  "displayName": "vscode-qe",
+  "description": "Quantum ESPRESSO files syntax highlighting support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "quantum-espresso",
+      "aliases": ["Quantum ESPRESSO", "quantum-espresso"],
+      "extensions": [""],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "quantum-espresso",
+      "scopeName": "source.qe",
+      "path": "./syntaxes/quantum-espresso.tmLanguage.json"
+    }]
+  }
+}
